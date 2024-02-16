@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <H1 class="text-8xl m-20"><span id="discount-rate">20</span>% Discount</H1>
+    </header>
+        <main class="flex text-3xl">
+            <div class="grid grid-cols-3 mx-12  w-fit gap-5 px-5">
+                <!-- card grid -->
+                <!-- First Row -->
+                <h2 class="col-span-3 font-extrabold text-5xl bg-slate-300">Kitchenware</h2>
+
+                <div id="spoons" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Kitchenware/spon.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Spoons</h2>
+                        <h3>$<span>39.99</span></h3>
+                    </div>
+                </div>
+
+                <div id="chopping-board" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Kitchenware/chopping-boat.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Chopping Board</h2>
+                        <h3>$<span>35.99</span></h3>
+                    </div>
+                </div>
+
+                <div id="cooker" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Kitchenware/presurekukar.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cooker</h2>
+                        <h3>$<span>59.99</span></h3>
+                    </div>
+                </div>
+
+                <!-- second Row -->
+                <h2 class="col-span-3 font-extrabold text-5xl bg-slate-300">Sportsware</h2>
+
+                <div id="cap" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Sportswear/cap.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cap</h2>
+                        <h3>$<span>19.99</span></h3>
+                    </div>
+                </div>
+
+                <div id="jersey" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Sportswear/jersey.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Jersey</h2>
+                        <h3>$<span>199.99</span></h3>
+                    </div>
+                </div>
+
+                <div id="shoes" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Sportswear/shoes.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Shoes</h2>
+                        <h3>$<span>299.99</span></h3>
+                    </div>
+                </div>
+
+                <!-- third row -->
+                <h2 class="col-span-3 font-extrabold text-5xl bg-slate-300">Furniture</h2>
+
+                <div id="chair" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Furniture/chair.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Chair</h2>
+                        <h3>$<span>209.99</span></h3>
+                    </div>
+                </div>
+                <div id="single-sofa" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Furniture/singel-sofa.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Single Sofa</h2>
+                        <h3>$<span>299.99</span></h3>
+                    </div>
+                </div>
+                <div id="sofa" class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="Images/Furniture/sofa.png" alt="K,Accessories" class="rounded-xl " />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Sofa</h2>
+                        <h3>$<span>649.99</span></h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div> <!-- purchase section -->
+
+                <div class="text-4xl bg-slate-300 p-10">
+                    <h4>Have Coupon?</h4>
+                    <input class="bg-black text-white p-5 rounded-2xl my-5" type="text" name="" id=""
+                        placeholder="Type Coupon number">
+                </div>
+                <div class="my-5">
+                    <!-- sected items -->
+                    <div>
+                        <h3 class="text-4xl font-extrabold mb-3">Oder list</h3>
+                        <ol id="order-list" class="my-5">
+
+                        </ol>
+                    </div>
+                    <h3>Total Price: $<span id="total-price">0</span></h3>
+                    <h3>Discount: $<span id="discount"> </span></h3>
+                    <h3>Total: $<span id="discounted-price"></span></h3>
+                </div>
+                <div class="flex justify-center">
+                    <button class="btn bg-red-500 text-white w-full text-5xl h-20">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </main>
+    <script src="Unitlity.js"></script>
+    <script src="shopping.js"></script>
+</body>
+
+</html>
